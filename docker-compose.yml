@@ -1,0 +1,15 @@
+---
+services:
+  sonarr:
+    image: braingremlin/sonarr-py:latest
+    container_name: sonarr
+    volumes:
+      - /volume1/docker/sonarr:/config
+      - /volume3/media02:/media02
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - 8989:8989
+    env_file:
+      - stack.env
+    restart: unless-stopped
