@@ -3,3 +3,6 @@
 FROM lscr.io/linuxserver/sonarr:latest
 
 RUN apk add python3 py3-transmission-rpc
+
+# TO DO
+# add move script to image

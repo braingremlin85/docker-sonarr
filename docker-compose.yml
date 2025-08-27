@@ -10,6 +10,12 @@ services:
       - ${MEDIA_DIR:-media}:/media02
     security_opt:
       - no-new-privileges:true
+    networks:
+      media-bridge:
     ports:
       - 8989:8989
     restart: unless-stopped
+
+networks:
+  media-bridge:
+    external: true    
