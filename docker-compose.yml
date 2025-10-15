@@ -1,7 +1,7 @@
 ---
 services:
   sonarr:
-    image: braingremlin/sonarr-py:latest
+    image: braingremlin/sonarr-py3:latest
     container_name: sonarr
     env_file:
       - stack.env
