@@ -3,6 +3,7 @@ TODO
 *.kate-swp
 *.bak
 *.old
+.vscode/
 
 # OS generated files #
 ######################
